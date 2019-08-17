@@ -1,0 +1,60 @@
+.root
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+
+header 
+    height: $heightHeader
+    background: linear-gradient(20deg,#262626,$bgColorHeader,#262626)
+    display: flex
+    justify-content: center
+    align-items: center
+
+.wrapper 
+    flex-grow: 1
+    background: $path
+    background-position: center
+    background-size: cover
+
+    display: flex
+    .container 
+        width: 100%
+        max-width: 500px
+        padding: 15px
+        margin: auto
+        .content 
+            max-width: 900px
+            font-family: $formFont
+            .content__wrapper
+                display: flex
+                &__btn
+                    flex-grow: 1
+                    padding: 10px 40px
+
+            .content__form
+                display: none
+                &.active
+                    display: block
+                &__label, &__input
+                    display: block
+                    width: 100%
+                    // margin: 1rem 0
+                &__label
+                    margin: 1rem 0 .5rem
+                    color: whitesmoke
+                    font-size: 1.5rem
+                &__input
+                    padding: 5px 13px
+                    margin: .5rem 0 
+                &__submit
+                    display: block
+                    margin: 1.5rem auto
+                    padding: 10px 40px
+
+footer 
+    background: linear-gradient(20deg,#262626,$bgColorHeader,#262626)
+    padding: 15px
+    color: whitesmoke
+
+
+
